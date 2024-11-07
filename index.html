@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecno Z</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Navbar que contiene el título y el icono de hamburguesa -->
+    <div class="navbar">
+        
+        <!-- Contenedor del título centrado -->
+        <div class="navbar-titulo">
+            <a href="https://es.pornhub.com" class="titulo">Tecno Z</a>
+        </div>        
+
+        <!-- Contenedor de la hamburguesa y el menú desplegable -->
+        <div class="navbar-menu">
+            <div class="hamburguesa">☰</div>
+
+            <!-- Menú desplegable -->
+            <div class="menu-desplegable" id="menu">
+                <a href="#">Inicio</a>
+                <a href="#" onclick="abrirModal()">Nosotros</a>
+                <a href="#">Luisana</a>
+                <a href="#">Te amo</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="miModal" class="modal">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <img class="modal-contenido" id="imgModal" src="./Us.jpg" alt="Nosotros">
+    </div>
+
+    <div class="contenido-principal">
+        <h1 class="texto-principal">Tecno Z Reparaciones y Servicios</h1>
+        <p class="texto-secundario"> ¡Hi Bitch! Bienvenida a la página del Z, perra, acá te voy a ayudar a solucionar los problemas que pueda estar presentando tu tostadora.</p>
+       
+           <!-- Sección para ingresar Gmail -->
+            <p class="texto-ingreso">Ingresa aquí tu Gmail:</p>
+            <input type="email" id="campoGmail" class="campo-gmail" placeholder="gordaputa69@gmail.com">
+            <button id="botonEnviar" class="boton-enviar">Enviar</button>
+
+            <!-- Modal (Ventana flotante para describir el problema) -->
+            <div id="modalProblema" class="modal">
+                <div class="modal-content">
+                <span id="cerrarModal" class="cerrar">&times;</span>
+                <h2>Describe tu problema</h2>
+                <form id="formProblema">
+                <textarea id="campoProblema" placeholder="Escribe tu problema aquí..." required></textarea>
+            <button type="submit" class="boton-enviar">Enviar Descripción</button>
+        </form>
+    </div>
+</div>
+          <div class="services">
+            <h2>Servicios que Ofrecemos</h2>
+            <div class="service-item">
+                <h3>Reparación de Celulares</h3>
+                <p>Reparamos todo tipo de teléfonos, desde pantallas rotas hasta problemas internos.</p>
+            </div>
+            <div class="service-item">
+                <h3>Reparación de Laptops</h3>
+                <p>Reparaciones rápidas para laptops, tanto hardware como software.</p>
+            </div>
+            <div class="service-item">
+                <h3>Recuperación de Datos</h3>
+                <p>Recuperamos datos perdidos en discos duros, USB, y más.</p>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>© 2024 Cespedes Joaquin Leonel. Todos los derechos reservados.</p>
+            <p>Contáctanos: <a href="https://wa.me/+5493885779215" target="_blank">WhatsApp</a></p>
+            <p><a href="https://www.instagram.com/j1mmy.zzz/" target="_blank">Contáctanos en Instagram</a></p>
+        </footer>
+    
+</body>
+</html>
